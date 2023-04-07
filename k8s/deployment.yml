@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: config-service
-          image: config-service:0.0.1-SNAPSHOT
+          image: ghcr.io/ubaid4j/config-service:0.0.1-snapshot
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 50100
