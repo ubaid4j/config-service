@@ -7,7 +7,7 @@ server:
     threads:
       max: 50
       min-spare: 5
-      
+
 spring:
   application:
     name: config-service
@@ -17,12 +17,12 @@ spring:
         git:
           uri: https://github.com/ubaid4j/config-repo
           default-label: main
-          timeout: 5
+          timeout: 30
           clone-on-start: true
           force-pull: true
   lifecycle:
     timeout-per-shutdown-phase: 15s
-          
+
 #-----------------------Logging------------------------------#
 logging:
   level:
