@@ -11,6 +11,9 @@ server:
 spring:
   application:
     name: config-service
+  devtools:
+    livereload:
+      port: 51100
   cloud:
     config:
       server:
