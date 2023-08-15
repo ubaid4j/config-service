@@ -20,6 +20,18 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 50100
+          livenessProbe:
+            httpGet:
+              path: /management/health/liveness
+              port: 50100
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /management/health/readiness
+              port: 50100
+            initialDelaySeconds: 5
+            periodSeconds: 15
           env:
             - name: SERVER_PORT
               value: "50100"
