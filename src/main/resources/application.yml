@@ -17,8 +17,8 @@ management:
           - health
   endpoint:
     health:
-      show-details: always
-      show-components: always
+      show-details: never
+      show-components: never
       probes:
         enabled: true
   metrics:
