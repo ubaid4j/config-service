@@ -13,6 +13,10 @@ spec:
     metadata:
       labels:
         app: config-service
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /management/prometheus
+        prometheus.io/port: "50100"
     spec:
       containers:
         - name: config-service
