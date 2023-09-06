@@ -49,3 +49,5 @@ logging:
   level:
     dev:
       ubaid: INFO
+  pattern:
+    level: "%5p [${spring.application.name}, %X{trace_id}, %X{span_id}]"
